@@ -8,32 +8,32 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to the Book Store</h1>
+    <h1>The Goats of the game</h1>
   </header>
   <main>
-    <section id="book-list">
+    <section id="GoatOption">
       <h2>Available Books</h2>
-      <div id="books"></div>
+      <div id="goats"></div>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Book Store Inc.</p>
+    <p>&copy; 2024 Goat List Inc.</p>
   </footer>
   <script>
-    fetch('books.json')
+    fetch('goats.json')
       .then(response => response.json())
       .then(data => {
-        const bookList = document.getElementById('books');
-        data.forEach(book => {
-          const bookCard = document.createElement('div');
-          bookCard.classList.add('book-card');
+        const GoatList = document.getElementById('goats');
+        data.forEach(goat => {
+          const GoatCard = document.createElement('div');
+          bookCard.classList.add('goat-card');
           bookCard.innerHTML = `
-            <h3>${book.title}</h3>
-            <p>Author: ${book.author}</p>
-            <p>Genre: ${book.genre}</p>
-            <p>Price: ${book.price}</p>
+            <h3>${goat.name}</h3>
+            <p>Sport: ${book.author}</p>
+            <p>What he won: ${book.genre}</p>
+            <p>Trophies: ${book.price}</p>
           `;
-          bookList.appendChild(bookCard);
+          goatList.appendChild(goatCard);
         });
       });
   </script>
