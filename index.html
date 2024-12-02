@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Book Store</h1>
+  </header>
+  <main>
+    <section id="book-list">
+      <h2>Available Books</h2>
+      <div id="books"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Book Store Inc.</p>
+  </footer>
+  <script>
+    fetch('books.json')
+      .then(response => response.json())
+      .then(data => {
+        const bookList = document.getElementById('books');
+        data.forEach(book => {
+          const bookCard = document.createElement('div');
+          bookCard.classList.add('book-card');
+          bookCard.innerHTML = `
+            <h3>${book.title}</h3>
+            <p>Author: ${book.author}</p>
+            <p>Genre: ${book.genre}</p>
+            <p>Price: ${book.price}</p>
+          `;
+          bookList.appendChild(bookCard);
+        });
+      });
+  </script>
+</body>
+</html>
