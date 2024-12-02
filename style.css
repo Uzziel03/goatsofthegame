@@ -21,7 +21,7 @@ main {
   padding: 2rem;
 }
 
-#goat-list {
+#goats {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -44,3 +44,4 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
