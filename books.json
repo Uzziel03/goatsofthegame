@@ -1,20 +1,20 @@
 [
   {
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "price": "$10.99",
-    "genre": "Classic"
+    "name": "Messi",
+    "Sport": "Futbol",
+    "What he won": "World Cup",
+    "Trophy count": "39"
   },
   {
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "price": "$8.99",
-    "genre": "Classic"
+    "name": "LeBron",
+    "Sport": "Basketball",
+    "What he won": "NBA Championship",
+    "Trophy count": "4"
   },
   {
-    "title": "1984",
-    "author": "George Orwell",
-    "price": "$9.99",
-    "genre": "Dystopian"
+    "name": "Peyton Manning",
+    "Sport": "Football",
+    "What he won": "Superbowl",
+    "Trophy count": "2"
   }
 ]
