@@ -21,12 +21,12 @@ main {
   padding: 2rem;
 }
 
-#book-list {
+#goat-list {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.book-card {
+.goat-card {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
